@@ -8,6 +8,7 @@ public class playerControl : MonoBehaviour
     public GameObject scoreText;
     public bool gameState;
     private Vector3 setPos;
+    public GameObject robberPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,6 +43,7 @@ public class playerControl : MonoBehaviour
         else
         {
             playerScore -= 1;
+            Instantiate(robberPrefab, transform.position, transform.rotation);
         }
         
         Destroy(col.gameObject);
