@@ -9,6 +9,8 @@ public class playerControl : MonoBehaviour
     public bool gameState;
     private Vector3 setPos;
     public GameObject robberPrefab;
+
+    [SerializeField] private AudioClip monkeySoundClip; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,6 +46,7 @@ public class playerControl : MonoBehaviour
         {
             playerScore -= 1;
             Instantiate(robberPrefab, transform.position, transform.rotation);
+            AudioSource.PlayClipAtPoint(monkeySoundClip, transform.position, 1f); 
         }
         
         Destroy(col.gameObject);

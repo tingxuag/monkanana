@@ -1961,6 +1961,8 @@ MonoBehaviour:
   playerSpeed: 10
   scoreText: {fileID: 797608046}
   gameState: 0
+  robberPrefab: {fileID: 3617059484972076197, guid: 112192dee66444ea0ab7c3836aa27eb9, type: 3}
+  monkeySoundClip: {fileID: 8300000, guid: 307d4b91b603e584882abeb0d51ee0a4, type: 3}
 --- !u!50 &1290923856
 Rigidbody2D:
   serializedVersion: 5
